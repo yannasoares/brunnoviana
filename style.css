@@ -9,3 +9,34 @@ html,body{
 	align-items: center;
 	width: 100%;
 }
+#home {
+	width: 100%;
+}
+#home header {
+	 	
+}
+#home nav {
+	width: 100%;
+	position: fixed;
+	background: pink;
+}
+#home nav ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-top: 47px;
+}
+#home nav ul li{
+	margin-left: 1.72%;
+	border:solid 1px #888;
+	border-radius: 15px;
+	width: 100px;
+	background: #fff;
+	color : #00416d;
+	font-style: normal;
+	text-align: center;
+	line-height: 0.8em;
+	letter-spacing: 0em;
+	padding: 5px 0;
+	font-size: 0.94em;			
+}
