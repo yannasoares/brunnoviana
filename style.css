@@ -1,0 +1,11 @@
+*,*:before,*after {
+	box-sizing: border-box;
+	position: fixed;
+}
+html,body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
