@@ -23,7 +23,7 @@ html,body{
 	width: 100%;
 	height: 100vh;
 	background: url(assets/fundoheader.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }
 #home nav {
 	width: 100%;
@@ -83,12 +83,12 @@ html,body{
 main{
 	display: flex;
 	align-items: flex-start;
-	height: 100vh;
+	min-height: 100vh;
 	/*background: #000;*/
 }
 main section{
 	max-width: 50%;
-	height: 75vh;
+	min-height: 75vh;
 	margin-top: 7%;
 	/*background: red;*/
 }
@@ -163,8 +163,65 @@ main #acoes div p{
 }
 
 #contato {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	background: url(assets/fundofooter.jpg) no-repeat bottom;
-	background-size: 100%;
+	background-size: cover;
 }
+#contato div{
+	background: rgba(0,0,0,0.5);
+	width: 22%;
+	border-radius: 15px;
+	margin-right: 5%;
+	padding: 15px 35px;
+	padding-bottom: 0;
+	padding-left: 25px;
+	padding-right: 0;
+	display: flex;
+	align-items: flex-start;
+	flex-flow: row wrap
+}
+#contato div h3{
+	width: 100%;
+	font-family: 'Source Sans Pro',sans-serif;
+	font-size: 1.5em;
+	color: #ffffff;
+	font-style: normal;
+	text-align: center;
+	line-height: 1.61em;
+	letter-spacing: 0em;
+	margin: 0px;
+}
+#contato div p{
+	width: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	color: #ffffff;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.07em;
+	letter-spacing: 0em;
+	margin: 5px;
+	/*margin-left: 59px;*/
+}
+#contato div a{
+	text-decoration:none;
+	width: 50px;
+	height: 50px;
+	margin-left: 11px;
+	position: relative;
+	left: 100px;
+	bottom: 15px;
+}
+#contato div a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #fff;
+	margin-left: 20px;
+	margin-right: 25px;
+	/*margin-left: 110px;*/
+}		
