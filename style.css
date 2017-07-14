@@ -53,7 +53,8 @@ html,body{
 	line-height: 0.8em;
 	letter-spacing: 0em;
 	padding: 5px 0;
-	font-size: 0.94em;			
+	font-size: 0.94em;
+	margin: 10px;			
 }
 #home h1{
 	width: 40%;
@@ -123,7 +124,7 @@ main #sobre p{
 	color: #1f4ecc;
 	font-style: normal;
 	text-align: left;
-	line-height: 1.07em;
+	line-height: 1.15em;
 	letter-spacing: 0em;
 }
 main #acoes{
@@ -147,6 +148,16 @@ main #acoes h2{
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
+
+main #acoes .container-acoes2 h3{
+	padding-top: 25px;
+}
+
+main #acoes h3{
+	text-align: center;
+	margin-top: 0;
+
+}
 main #acoes div{
 	color: #1f4ecc;
 	padding: 0 15px;
@@ -157,6 +168,28 @@ main #acoes div{
 	margin-right: 5px;
 	margin-top: 10px;
 }
+main #acoes .container-acoes1{
+	color: #1f4ecc;
+	/*padding: 36px 15px;*/
+	border: solid 2px #eb3a38;
+	border-radius: 30px;
+	width:20%;
+	height: 70%;
+	/*margin-right: 5px;*/
+	margin-top: 10px;
+}
+
+main #acoes .container-acoes3{
+	color: #1f4ecc;
+	padding: 47px 15px;
+	border: solid 2px #eb3a38;
+	border-radius: 30px;
+	width:20%;
+	height: 70%;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
 main #acoes div p{
 	margin-top: 0;
 	font-size: 13px;
@@ -224,4 +257,4 @@ main #acoes div p{
 	margin-left: 20px;
 	margin-right: 25px;
 	/*margin-left: 110px;*/
-}		
+}
