@@ -16,14 +16,27 @@ html,body{
 	align-items: center;
 	width: 100%;
 	margin: 0;
+	overflow: auto;
 }
+@media (max-width: 640px) {
+	body {
+		overflow: hidden;
+	}
+}
+
 #home {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background: url(assets/fundoheader.jpg) no-repeat;
 	background-size: cover;
+}
+@media (max-width: 640px) {
+	#home {
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 #home nav {
 	width: 100%;
@@ -56,19 +69,37 @@ html,body{
 	font-size: 0.94em;
 	margin: 10px;			
 }
+@media (max-width: 640px){
+	#home nav ul a li{
+		width: 80px;
+		border-radius: 25px;
+		padding: 4px;
+		margin: 4px 5px;
+		font-size: 1.2em;
+		margin-left: 0;
+		line-height: 1.8em;
+	}
+}
 #home h1{
 	width: 40%;
 	font-size: 5em;
 	color: #ffffff;
 	font-family: 'PT Mono', monospace;
 	font-weight: 700;
-	/*white-space: pre-wrap;*/
 	font-style: normal;
 	text-align: left;
-	/*line-height: 4.29em;*/
 	letter-spacing: 0em;
 	margin-left: 16%;
 	margin-top: 227px;
+}
+@media (max-width: 640px){
+	#home h1{
+		font-size: 4em;
+		margin:0;
+		/*margin: 40% 32px;*/
+		display: flex;
+		align-self: flex-start;
+	}
 }
 #home h2{
 	font-size: 2.5em;
@@ -81,17 +112,41 @@ html,body{
 	margin-top: 325px;
 	margin-left: 4.52%;
 }
+@media (max-width: 640px){
+	#home h2{
+		width: 100%;
+		margin: 0;
+		/*margin-top: 75px;*/
+		/*margin-left: 35px;*/
+		/*flex-direction: row;*/
+		font-size: 2.5em;
+		/*display: flex;*/
+		/*align-self: center;*/
+		position: static;
+		}
+}
 main{
 	display: flex;
 	align-items: flex-start;
 	min-height: 100vh;
 	/*background: #000;*/
 }
-main section{
+@media (max-width: 640px){
+	main{
+		width: 100%;
+		flex-direction: column;
+	}
+}
+main .sections{
 	max-width: 50%;
-	min-height: 75vh;
+	min-height: 70vh;
 	margin-top: 7%;
 	/*background: red;*/
+}
+@media(max-width: 640px){
+	main .sections{
+		max-width: 100%;
+	}
 }
 main #sobre{
 	padding-top: 40px;
@@ -131,14 +186,19 @@ main #acoes{
 	display: flex; 
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	align-content: flex-start;
+	align-content: center;
 	padding-top: 20px;
 	padding-left: 20px;
 }
+@media(max-width: 640px){
+	main #acoes{
+		flex-direction: column;
+	}
+}
 main #acoes h2{
 	width: 100%;
-	margin-left: 5%;
-	margin: 0 30px;
+	margin-left: 7px;
+	/*margin: 0 30px;*/
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	font-size: 1.88em;
@@ -149,45 +209,38 @@ main #acoes h2{
 	letter-spacing: 0em;
 }
 
-main #acoes .container-acoes2 h3{
-	padding-top: 25px;
+main #acoes .container-acoes{
+	width:20%;
+	min-height: 40vh;
+	color: #1f4ecc;
+	padding: 30px 20px;
+	border: solid 2px #eb3a38;
+	border-radius: 30px;
+	margin-left: 7px;
+	margin-top: 10px;
 }
+@media (max-width: 640px){
+	main #acoes .container-acoes{
+		width: 40%;
 
-main #acoes h3{
-	text-align: center;
+	}
+}
+main #acoes .container-acoes h3{
+	height: 44px;
 	margin-top: 0;
+	display: flex;
+	align-items: flex-end;
 
 }
-main #acoes div{
-	color: #1f4ecc;
-	padding: 0 15px;
-	border: solid 2px #eb3a38;
-	border-radius: 30px;
-	width:20%;
-	height: 70%;
-	margin-right: 5px;
-	margin-top: 10px;
-}
+
 main #acoes .container-acoes1{
-	color: #1f4ecc;
-	/*padding: 36px 15px;*/
-	border: solid 2px #eb3a38;
-	border-radius: 30px;
-	width:20%;
-	height: 70%;
-	/*margin-right: 5px;*/
-	margin-top: 10px;
+	
 }
-
+main #acoes .container-acoes2{
+/*	padding: 25px;*/
+}
 main #acoes .container-acoes3{
-	color: #1f4ecc;
-	padding: 47px 15px;
-	border: solid 2px #eb3a38;
-	border-radius: 30px;
-	width:20%;
-	height: 70%;
-	margin-right: 5px;
-	margin-top: 10px;
+
 }
 
 main #acoes div p{
